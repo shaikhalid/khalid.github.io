@@ -53,8 +53,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'posts',
-        path: `${__dirname}/src/content/posts`
+        name: 'edu',
+        path: `${__dirname}/src/content/edu`
       }
     },
     {
@@ -70,20 +70,6 @@ module.exports = {
         path: `${__dirname}/src/content/talks`
       }
     },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'posts',
-    //     path: `${__dirname}/src/pages/blog`
-    //   }
-    // },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'projects',
-    //     path: `${__dirname}/src/pages/projects`
-    //   }
-    // },
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {

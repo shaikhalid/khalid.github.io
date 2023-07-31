@@ -43,7 +43,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
             throw new Error('each project needs a type');
           }
           break;
-        case 'posts':
+        case 'edu':
           slug = createFilePath({
             node,
             getNode
@@ -52,7 +52,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
           createNodeField({
             node,
             name: 'slug',
-            value: `/blog${slug}`
+            value: `/edu${slug}`
           });
 
           createNodeField({

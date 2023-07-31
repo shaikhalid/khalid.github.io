@@ -87,18 +87,18 @@ const Nav = () => {
     <StyledNav>
       <StyledList>
         <ListElement>
-          <NavItem to="/blog/" activeClassName={activeClassName}>
-            blog
+          <NavItem to="/edu/" activeClassName={activeClassName}>
+            Education
           </NavItem>
         </ListElement>
         <ListElement>
           <NavItem to="/projects/" activeClassName={activeClassName}>
-            projects
+            Projects
           </NavItem>
         </ListElement>
         <ListElement>
-          <NavItem to="/talks/" activeClassName={activeClassName}>
-            talks
+          <NavItem to="/workex/" activeClassName={activeClassName}>
+            Work Ex
           </NavItem>
         </ListElement>
       </StyledList>

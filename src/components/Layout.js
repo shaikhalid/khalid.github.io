@@ -63,11 +63,11 @@ const Layout = ({ children }) => {
           href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Rubik:700"
           rel="stylesheet"
         />
-        <title>Varun Dey</title>
-        <meta property="og:title" content="Varun Dey" />
-        <meta property="og:description" content="Personal Portfolio of Varun Dey" />
+        <title>Khalid Shaikh</title>
+        <meta property="og:title" content="Khalid Shaikh" />
+        <meta property="og:description" content="Personal Portfolio of Khalid Shaikh" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://varundey.me" />
+        <meta property="og:url" content="https://shaikhalid.me" />
         <meta
           property="og:image"
           content="https://varundey.me/social-meta.png"
@@ -88,7 +88,7 @@ const Layout = ({ children }) => {
 
       <StyledHeader>
         <StyledTitle>
-          <TitleLink to="/">Varun Dey</TitleLink>
+          <TitleLink to="/">Khalid Shaikh</TitleLink>
         </StyledTitle>
 
         <Nav />
