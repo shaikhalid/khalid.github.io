@@ -26,13 +26,13 @@ const StyledPostDate = styled.time`
 `;
 
 const PostTemplate = ({ data }) => {
-  const { frontmatter ,body} = data.mdx;
+  const { frontmatter, body } = data.mdx;
 
   return (
     <Layout>
       {frontmatter.title && (
         <Helmet>
-          <title>Varun Dey | {frontmatter.title}</title>
+          <title>Khalid Shaikh | {frontmatter.title}</title>
         </Helmet>
       )}
       {frontmatter.title && (
@@ -57,14 +57,13 @@ const PostTemplate = ({ data }) => {
 export default PostTemplate;
 
 export const query = graphql`
-query ($slug: String!) {
-  mdx(fields: {slug: {eq: $slug}}) {
-    frontmatter {
-      title
-      date
-      excerpt
+  query($slug: String!) {
+    mdx(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        title
+        date
+      }
+      body
     }
-    body
   }
-}
 `;

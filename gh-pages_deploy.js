@@ -1,12 +1,14 @@
 const ghPages = require('gh-pages');
 
 ghPages.publish(
-  'public', {
+  'public',
+  {
     user: {
-      name: 'Varun Dey',
-      email: 'varundey20@gmail.com'
+      name: 'Khalid Shaikh',
+      email: 'shaikhalidwork@gmail.com'
     },
     branch: 'master',
-    message: 'Deploy commit from gh-pages',
-  }, (success, error) => console.log(success, error)
+    message: 'Deploy commit from gh-pages'
+  },
+  (success, error) => console.log(success, error)
 );

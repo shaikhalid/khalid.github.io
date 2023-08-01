@@ -58,10 +58,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
           createNodeField({
             node,
             name: 'type',
-            value: 'post'
+            value: 'edu'
           });
           break;
-        case 'talks':
+        case 'workex':
           slug = createFilePath({
             node,
             getNode
@@ -70,13 +70,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
           createNodeField({
             node,
             name: 'slug',
-            value: `/talks${slug}`
+            value: `/workex${slug}`
           });
 
           createNodeField({
             node,
             name: 'type',
-            value: 'talks'
+            value: 'workex'
           });
           break;
         case 'pages':

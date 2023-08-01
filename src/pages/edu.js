@@ -1,28 +1,28 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/Layout';
-import BlogListing from '../components/BlogListing';
+import Layout from './../components/Layout';
+import EduListing from './../components/EduListing';
 
-const BlogPageInner = props => {
+const EduPageInner = props => {
   try {
-    const posts = props.data.allMdx ? props.data.allMdx.edges : [];
+    const edus = props.data.allMdx ? props.data.allMdx.edges : [];
 
-    return <BlogListing posts={posts} />;
+    return <EduListing edus={edus} />;
   } catch (e) {
     return <h2>Unable to find any blog posts.</h2>;
   }
 };
 
-const BlogPage = props => {
+const EduPage = props => {
   return (
     <Layout>
-      <BlogPageInner {...props} />
+      <EduPageInner {...props} />
     </Layout>
   );
 };
 
-export default BlogPage;
+export default EduPage;
 
 export const query = graphql`
   query {
@@ -31,14 +31,16 @@ export const query = graphql`
         frontmatter: { publish: { eq: true } }
         fields: { type: { eq: "edu" } }
       }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___start_date], order: DESC }
     ) {
       edges {
         node {
           frontmatter {
             title
-            date(formatString: "YYYY - YYYY")
-          }                           
+            course
+            start_date(formatString: "MMM YYYY")
+            end_date(formatString: "MMM YYYY")
+          }
           fields {
             slug
           }
