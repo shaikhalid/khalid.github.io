@@ -62,8 +62,7 @@ const NavItem = styled(Link).attrs({
   activeClassName
 })`
   color: black;
-  border: none;
-
+  border-color: #999 !important;
   &:hover {
     color: blue;
   }
@@ -98,7 +97,7 @@ const Nav = () => {
         </ListElement>
         <ListElement>
           <NavItem to="/workex/" activeClassName={activeClassName}>
-            Work Ex
+            WorkEx
           </NavItem>
         </ListElement>
       </StyledList>

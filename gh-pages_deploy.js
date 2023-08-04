@@ -7,7 +7,7 @@ ghPages.publish(
       name: 'Khalid Shaikh',
       email: 'shaikhalidwork@gmail.com'
     },
-    branch: 'master',
+    branch: 'develop',
     message: 'Deploy commit from gh-pages'
   },
   (success, error) => console.log(success, error)

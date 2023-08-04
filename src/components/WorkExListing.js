@@ -24,7 +24,8 @@ const WorkExListing = ({ workExs }) => {
   const workExLinks = workExs.map(workEx => (
     <StyledWorkExItem key={workEx.node.fields.slug}>
       <Link to={workEx.node.fields.slug}>{workEx.node.frontmatter.title}</Link>
-      {` @ ${workEx.node.frontmatter.company}`}
+      <br></br>
+      {`@${workEx.node.frontmatter.company}`}
       <br></br>
       <DateSpan>
         ({workEx.node.frontmatter.start_date} -{' '}
